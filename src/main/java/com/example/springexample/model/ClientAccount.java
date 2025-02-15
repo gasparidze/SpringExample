@@ -25,7 +25,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(schema = "spring_schema", name = "client_account")
+@Table(name = "client_account")
 public class ClientAccount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
