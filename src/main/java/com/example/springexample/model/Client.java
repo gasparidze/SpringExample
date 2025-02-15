@@ -20,11 +20,11 @@ import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(exclude = "clientAccount")
+@ToString(exclude = "clientAccounts")
 @Data
 @Builder
 @Entity
-@Table(schema = "spring_schema", name = "client")
+@Table(name = "client")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
