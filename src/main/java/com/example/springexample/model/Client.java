@@ -43,6 +43,6 @@ public class Client {
     private String email;
 
     @Builder.Default
-    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST)
     private List<ClientAccount> clientAccounts = new ArrayList<>();
 }

@@ -4,3 +4,13 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres?currentSchema=spring_schema
     username: postgres
     password: postgres
+
+logging:
+  level:
+    org:
+      hibernate:
+        stat: DEBUG
+        SQL: DEBUG
+      springframework:
+        jdbc:
+          core: TRACE
